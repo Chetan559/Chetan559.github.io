@@ -48,10 +48,6 @@ section {
     min-height: 100vh;
 }
 
-video {
-    padding: 10px;
-}
-
 iframe {
     height: 75vh;
 }
