@@ -110,7 +110,7 @@ ul li{
     background-color: white;/*#ffee10;*/
     transition: .5s;
     transform: scale(.9);
-     z-index: -1;
+    z-index: -1;
 }
 
 .contact a:hover::before{
