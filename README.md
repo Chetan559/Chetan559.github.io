@@ -1,3 +1,3 @@
-# Personal Website
+# Personal Portfolio Website
 
-- > <a href="https://chetan559.github.io/Chetan_Sharma.github.io/">Website</a>
+- > <a href="https://chetan559.github.io/">Website</a>
