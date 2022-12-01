@@ -144,7 +144,7 @@ ul li{
     height: 80vh;
     padding: 0 2rem;
     background: var(--main-gray);
-    margin-bottom: 25px;
+    padding-bottom: 200px;
   }
   
   @media (max-width: 28.75em) {
