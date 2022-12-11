@@ -134,7 +134,8 @@ ul li{
 
 .contact-section {
     border: 0;
-    margin: top -25px; ;
+    margin: top 25px; 
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,6 +166,7 @@ ul li{
     max-width: 980px;
     margin-top: 4rem;
     flex-wrap: wrap;
+    /* overflow:scroll; */
   }
   
   .contact-details {
@@ -173,6 +175,23 @@ ul li{
     transition: transform 0.3s ease-out;
   }
   
+  .yellow{
+    color: #fffc00;
+  }
+    
+  .black{
+    color: #252525;
+  }
+
+  .insta{
+    color:violet;
+  }
+  .blue{
+    color: #0072b1;
+  }
+  .blue2{
+    color: #00acee;
+  }
   .contact-details:hover {
     transform: translateY(8px);
     color:  #e73213;
