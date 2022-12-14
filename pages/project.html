@@ -11,7 +11,7 @@
     <header>
         <h1>Chetan Sharma</h1>
     </header>
-    <nav>     
+    <nav id="hover">     
         <a class="mr-5 hover:text-white" href="../index.html">Home</a>
         <a class="mr-5 hover:text-white" href="project.html">Projects</a>
         <a class="mr-5 hover:text-white" href="book.html">Books Collection</a>
@@ -19,10 +19,10 @@
    </nav>   
      <br>   
     <main>
-     <section>
+     <!-- <section>
          <div class="gallery">
             <a href=" https://chetan559.github.io/365Days/" target="_blank">
-                <img src="../img/GD-youtube-channel.jpg" alt="365Dayscodingchallenge" id="365Dayscodingchallenge">
+                <img src="data:image/jpeg;base64,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" alt="365Dayscodingchallenge" id="365Dayscodingchallenge">
             </a>    
             <img src="https://st.depositphotos.com/1106005/3146/i/600/depositphotos_31468817-stock-photo-coming-soon-sign.jpg" alt="comingsoon">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCAdXBOvqFLLzrcvGK_U_nVJN_wIYYYrHig&usqp=CAU" alt="comingsoon">
@@ -33,7 +33,110 @@
             <img src="https://st.depositphotos.com/1106005/3146/i/600/depositphotos_31468817-stock-photo-coming-soon-sign.jpg" alt="comingsoon">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCAdXBOvqFLLzrcvGK_U_nVJN_wIYYYrHig&usqp=CAU" alt="comingsoon">
          </div>
-     </section>
+     </section> -->
+     <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">These are some of my projects</h2>
+  
+        <div class="projects-grid">
+          <a
+            href="https://chetan559.github.io/365Days/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="../img/htmlcss.png" 
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              FCC:- HTML/CSS 
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a
+            href="./web-project.html"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="../img/mywebdev.png"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              My Web-Projects
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="https://static.vecteezy.com/system/resources/previews/003/582/701/original/coming-soon-background-illustration-template-design-free-vector.jpg"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Coming-Soon
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="https://static.vecteezy.com/system/resources/previews/003/582/701/original/coming-soon-background-illustration-template-design-free-vector.jpg"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Coming-Soon
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="https://static.vecteezy.com/system/resources/previews/003/582/701/original/coming-soon-background-illustration-template-design-free-vector.jpg"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Coming-Soon
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="https://static.vecteezy.com/system/resources/previews/003/582/701/original/coming-soon-background-illustration-template-design-free-vector.jpg"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Coming-Soon
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          
+        </div>
+        </section>
     </main>
     <footer>
         <a href="#">FAQ</a>
