@@ -107,14 +107,7 @@ ul li{
 }
 
 .contact a{
-    /* position: relative;
-    display: block;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    /* background: #edcbd2; */
-     background-color: white; 
+    background-color: white; 
     font-size: 30px;
     color: #666;
     transition: 0.5s;
