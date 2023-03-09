@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Chetan Sharma</h1>
+<h1 align="center">Hi <img src="https://raw.githubusercontent.com/syedareehaquasar/syedareehaquasar/master/gifs/Hi.gif" width="30px">, I'm Chetan Sharma</h1>
 <h3 align="center">A passionate FrontEnd developer from India</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Chetan559&label=Profile%20views&color=0e75b6&style=flat" alt="Chetan559" /> </p>
@@ -26,3 +26,5 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Chetan559&show_icons=true&locale=en" alt="Chetan559" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Chetan559&" alt="Chetan559" /></p>
+<br>
+<p align="center"> <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" height="160px" width="160px"></p>
