@@ -66,6 +66,10 @@ main {
 h2 {
     padding: 20px;
   }
+
+#dynamic-text {
+    color: #7733FF;
+}
   
   p{
     color:antiquewhite;
