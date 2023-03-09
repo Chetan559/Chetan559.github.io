@@ -79,6 +79,11 @@ section {
   min-height: 100vh;
 }
 
+#info-97{
+  text-align:left;
+  margin-left: 20px;
+}
+
 iframe {
   height: 75vh;
 }
@@ -364,7 +369,7 @@ list-style: none;
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
-    background:url('../img/me.2.jpg') no-repeat center center/  cover;
+    background:url('../img/Untitled\ design.png') no-repeat center center/  cover;
     color: aliceblue;
     transform: rotateY(180deg);
     border-radius: 50%;
