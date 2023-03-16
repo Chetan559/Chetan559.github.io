@@ -149,7 +149,6 @@ a:hover{
 .contact-section {
     border: 0;
     margin: top 25px; 
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,7 +172,6 @@ a:hover{
     background-color: white;
     margin-top: 4rem;
     width: auto;
-    /* height: 25px; */
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 1px 15px 25px -10px rgba(255, 255, 255, .25);
@@ -191,14 +189,11 @@ a:hover{
     justify-content: center;
     width: 100%;
     max-width: 980px;
-    /* margin-top: 4rem; */
     flex-wrap: wrap;
-    /* overflow:scroll; */
   }
   
   .contact-details {
     font-size: 1rem;
-    /* text-shadow: 2px 2px 1px #666; */
     transition: transform 0.3s ease-out;
   }
   
@@ -274,6 +269,8 @@ a:hover{
     box-shadow: #e73213;
     text-shadow:  #e73213;
 } */
+
+/* Above are the old hovering effet which moved the icon in negative y-axis hovering */
   
 /* Contact-section-end */
 
@@ -323,6 +320,7 @@ footer a {
   }
   
   /* "Automagic" image grid using no media queries */
+  
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
