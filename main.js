@@ -1,3 +1,4 @@
+alert("For Better Experience , Open This Site On Laptop/Desktop PC browser!! :)");
 document.addEventListener("DOMContentLoaded" , () => {
     
     let dynamicContent = document.querySelector("#dynamic-text");
