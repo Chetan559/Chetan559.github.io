@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded" , () => {
             letterInx=0;
             printLetters(phrases[phraseIndex]);
         }
-        // else if (letterInx > -1) {
-        //     dynamicContent.textContent = dynamicContent.textContent.substring(0 ,dynamicContent.textContent.length - 1);
-        //     console.log(dynamicContent.textContent)
-        //     letterInx -= 1;
-        //     setTimeout(function () {
-        //         clearLetters(phrase);
-        //     } , 100)
-        // }
+        else if (letterInx > -1) {
+            dynamicContent.textContent = dynamicContent.textContent.substring(0 ,dynamicContent.textContent.length - 1);
+            console.log(dynamicContent.textContent)
+            letterInx -= 1;
+            setTimeout(function () {
+                clearLetters(phrase);
+            } , 100)
+        }
     }
 })
