@@ -215,6 +215,10 @@ a:hover{
     color: #00acee;
   }
 
+  .reddit{
+    color: #ff5704;
+  }
+
   .label {
     position: relative;
     width: 5rem;
