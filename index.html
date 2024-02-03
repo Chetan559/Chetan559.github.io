@@ -1,97 +1,50 @@
+<?php
+header(($_SERVER['SERVER_PROTOCOL'] ?? 'HTTP/1.0').' 503 Service Temporarily Unavailable',true,503);
+header('Retry-After: 3600');
+header('X-Powered-By:'); //hide PHP
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/site-icon.png" >
-    <title>Chetan Sharma | HOME</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Maintenance...</title>
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+html, body {
+height: 100%;
+margin: 0;
+}
+main {
+height: 100%;
+margin: 0 auto;
+max-width: 700px;
+padding: 30px;
+display: table;
+text-align: center;
+}
+main > * {
+display: table-cell;
+vertical-align: middle;
+}
+
+body
+{
+font: 20px Helvetica, sans-serif; color: #333;
+}
+@keyframes blink {50% { color: transparent }}
+.dot { animation: 1s blink infinite }
+.dot:nth-child(2) { animation-delay: 250ms }
+.dot:nth-child(3) { animation-delay: 500ms }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Chetan Sharma</h1>
-    </header>
-    <nav id="hover">     
-        <a  href="#">HOME</a>
-        <a  href="pages/project.html">Projects</a>
-        <a  href="pages/book.html">Books Collection</a>
-        <a  href="pages/contact.html">Contact</a> 
-   </nav>   
-     <br>   
-    <main>
-        <section>
-            <div class="bodi container">
-                <div class="card-body">
-                    <div class="front">
-                        <div class="text one">
-                            <h2 id="name">CHETAN SHARMA</h2>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="text two">
-                            <h2 id="name">चेतन शर्मा</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <p >
-                This is Chetan Sharma<br>From Ahmedabad<br>I've just started my academic career at VGEC(Vishwakarma Government Engineering College)<br>
-            </p> 
-            <p id="info-97">
-                I have a passion for computer programming and information technology. I have used computer programming since I was in grade school. 
-                This passion has given me the ability to develop programs for a multitude of things, including robots and programming languages.
-                My other love is information technology. I have many plans to implement newer technologies in my life such as cloud computing and managed IT services.
-                <br>
-                <br>
-                I enjoy solving technical problems, researching and developing new technologies, designing software applications for different platforms.
-                I am also interested in pursuing degree programs in Information Systems Management or Computer Science. I enjoy meeting people and working with them in a team environment. 
-                I also enjoy interacting with clients and customers. My strong customer service skills allow me to do this well. I am a quick learner with a fun, outgoing personality.
-                In addition, I excel in my ability to work under pressure and handle stressful situations very well.
-                <br>
-                <br>
-                I am open to learning new things and getting involved with new projects that can help me learn or apply all that I have learned throughout my Academic career.
-                <br>
-                <br>
-            </p>   
-            <p>
-                I made this website for a college project but it seems now i'll use this site for all purpose. There is not much to know about me but i can share my daily routine with you guys:)
-            </p>
-            <p>
-                So you can find me:
-                <ul>
-                    <li><a class="link" href="pages/book.html">Reading Books </a></li>
-                    <li><a class="link" href="https://en.wikipedia.org/wiki/Cooking" target="_blank" >Occasionally Cooking Food ;)</a></li>
-                    <li><a class="link" href="https://www.scienceofpeople.com/why-we-eat/" target="_blank">Obviously Eating The Same</a> </li>
-                    <li><a class="link" href="https://rubiks.com/en-US/">Solving rubik's puzzles</a></li>    
-                    <li>Listening My Fav Music on <a class="link" target="_blank" href="https://open.spotify.com/user/gval5ehod9xb51i6af3ql4dv0?si=2962e13f45fc4a94">Spotify</a> <br>And much more,...</li>
-                </ul>
-            </p>
-            <p> 
-                I'm glad that you guys are exploring my first website . but Sorry this web site is still underdevelopment soon it will be available in its complete form. Thanks For Visiting :)<br>
-                Plz Share your experience <a class="link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe7g8R_z0G7aBhw6Ea5I86TgqFrkALFYgqmli042CIfV6EmoA/viewform?usp=sf_link">Feedback-></a>
-            </p>
-            <p id="donar">
-                <a href="https://www.buymeacoffee.com/ChetanSharma">
-                     <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/ChetanSharma" />
-                </a>
-            </p>
-            <br>
-            <br>
-        </section>
-    </main>
-    <footer>
-        <a href="#">FAQ</a>
-        <a href="pages/contact.html">Contact Us</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">&copy; 2022 | Chetan Sharma</a>
-    </footer>
+<main>
+<div>
+<h1>Maintenance in progress<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></h1>
+<p>Sorry for the inconvenience but we're performing some maintenance right now. Please check back later.</p>
+</div>
+</main>
 </body>
 </html>
