@@ -89,17 +89,11 @@ function App() {
                   into my journey. Explore to learn more about me and my
                   projects!
                 </p>
-                <p id="BuyMeCoffee">
-                  <a href="https://www.buymeacoffee.com/ChetanSharma">
-                    <img
-                      align="left"
-                      src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-                      height="50"
-                      width="210"
-                      alt="https://www.buymeacoffee.com/ChetanSharma"
-                    />
-                  </a>
-                </p>
+                <div className="flex gap-2 mt-12" id="DownloadCV">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                    Live preview
+                  </button>
+                </div>
               </div>
             </div>
             <div className="relative">
@@ -126,7 +120,7 @@ function App() {
                 </p>
                 <div className="flex mt-12 gap-2">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    Live preview
+                    <a href="">Live preview</a>
                   </button>
                   <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                     Checkout github
@@ -137,7 +131,9 @@ function App() {
                 <img src={Project2} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">Portfolio</h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Responsive HTML/CSS layout.Using HTML5, CSS3 (SCSS
+                  Developed a user-friendly e-learning platform for aspiring
+                  tailors, featuring interactive tutorials, community forums,
+                  personalized learning, and real-time support.
                 </p>
                 <div className="flex gap-2 mt-12">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">

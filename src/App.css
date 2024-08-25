@@ -21,8 +21,8 @@ body {
   width: 20em;
 }
 
-#BuyMeCoffee {
-  margin-top: 50px;
+#DownloadCV {
+  margin-top: 90px;
 }
 
 @keyframes typing-text {
@@ -39,3 +39,9 @@ body {
     border-color: transparent;
   }
 }
+
+/* @media (max-width: 28.75em) {
+  #DownloadCV {
+    visibility: hidden;
+  }
+} */
