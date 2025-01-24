@@ -1,6 +1,7 @@
 import Hero from "../../Components/Hero/Hero";
 import Navbar from "../../Components/Navbar/Navbar";
 import Project from "../../Components/Project/Project";
+import Review from "../../Components/Review/Review";
 import "./Home.css";
 import { useEffect, useState } from "react";
 
@@ -28,7 +29,7 @@ function Home() {
       <main className="relative">
         <Hero />
         <Project />
-        {/* Projects section */}
+        <Review />
 
         {/* Technoglies section */}
         <section className="py-10" id="technologies">

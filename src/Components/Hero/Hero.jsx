@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import profile from "../../assets/Photo.png";
-import profi from "../../assets/project1.png";
+import profi from "../../assets/indian-dance-dancing.gif";
 import "./Hero.css";
 
 const techStacks = [
@@ -44,6 +44,25 @@ const techStacks = [
 ];
 
 function Hero() {
+  const [joke, setJoke] = useState("Loading joke...");
+
+  useEffect(() => {
+    // Fetch a joke from the Joke API
+    fetch("https://v2.jokeapi.dev/joke/Programming?type=single")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data && data.joke) {
+          setJoke(data.joke);
+        } else {
+          setJoke("Couldn't fetch a joke. Try refreshing!");
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching joke:", error);
+        setJoke("Something went wrong. Please try again.");
+      });
+  }, []);
+
   return (
     <div className="container m-auto px-4 pt-12 pb-12 sm:pt-20 bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-white flex flex-col sm:flex-row gap-6 text-center sm:text-left">
       <div className="flex-1">
@@ -101,11 +120,9 @@ function Hero() {
                   Random Programming Joke
                 </a>
               </h3>
-              <p className="text-sm text-gray-700 dark:text-gray-300">
-                Loading joke...
-              </p>
+              <p className="text-sm text-gray-700 dark:text-gray-300">{joke}</p>
               <div className="mt-2 sm:flex sm:items-center sm:gap-2">
-                <p className="hidden sm:block sm:text-xs text-gray-500 dark:text-gray400">
+                <p className="hidden sm:block sm:text-xs text-gray-500 dark:text-gray-400">
                   Joke API
                 </p>
               </div>
@@ -114,11 +131,11 @@ function Hero() {
         </article>
 
         {/* Buttons Section */}
-        <div className="flex gap-2 mt-10 ">
-          <button className="flex-grow text-sm py-3 bg-gradient-to-t from-blue500 rounded-full to-cyan500 hover:from-blue700 hover:to-cyan700">
+        <div className="flex gap-4 mt-10">
+          <button className="flex-grow py-3 px-6 text-sm font-bold text-white bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800">
             Resume
           </button>
-          <button className="flex-grow text-sm py3 bg-gradient-to-t from-blue500 rounded-full to-cyan500 hover:from-blue700 hover:to-cyan700">
+          <button className="flex-grow py-3 px-6 text-sm font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-pink-300 dark:focus:ring-pink-800">
             Contact
           </button>
         </div>
