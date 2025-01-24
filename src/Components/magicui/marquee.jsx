@@ -12,7 +12,7 @@ export function Marquee({
   return (
     <div
       {...props}
-      className={`group flex overflow-hidden p-2 [--duration:10s] [--gap:1rem] [gap:var(--gap)] ${className}`}
+      className={`group flex overflow-hidden p-2 [--duration:8s] [--gap:1rem] [gap:var(--gap)] ${className}`}
     >
       {Array.from({ length: repeat }, (_, i) => (
         <div

@@ -76,8 +76,8 @@ const ReviewCard = ({ img, name, username, body }) => {
 
 function Review() {
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden  bg-gray-50 dark:bg-gray-800 ">
-      <h3 className="font-bold text-2xl md:text-4xl tracking-tight text-black dark:text-white transform transition-transform duration-300 hover:scale-105">
+    <div className="relative flex h-[500px] w-full flex-col items-start justify-center overflow-hidden  bg-gray-50 dark:bg-gray-800 ">
+      <h3 className="font-bold text-2xl md:text-4xl  tracking-tight text-black dark:text-white transform transition-transform duration-300 hover:scale-105">
         Reviews
       </h3>
       <Marquee pauseOnHover className="[--duration:20s]">

@@ -120,7 +120,9 @@ function Hero() {
                   Random Programming Joke
                 </a>
               </h3>
-              <p className="text-sm text-gray-700 dark:text-gray-300">{joke}</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300 overflow-hidden ">
+                {joke}
+              </p>
               <div className="mt-2 sm:flex sm:items-center sm:gap-2">
                 <p className="hidden sm:block sm:text-xs text-gray-500 dark:text-gray-400">
                   Joke API

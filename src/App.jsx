@@ -5,17 +5,11 @@ import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
-    <div className="App">
+    <div className=" bg-gray-50 dark:bg-gray-800 h-full">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
-          {/* <Route path="/Doctor" element={<Doctors />} />
-          <Route path="/Pathology" element={<Pathology />} />
-          <Route path="/Admin" element={<Admin />} />
-          <Route path="/analyse" element={<AnalyseForm />} />
-          <Route path="/Doctor/patients" element={<Patients />} />
-          <Route path="/Pathology/list" element={<MedicineDashboard />} /> */}
         </Routes>
       </Router>
     </div>
