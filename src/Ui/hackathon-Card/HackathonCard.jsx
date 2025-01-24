@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge } from "@/Ui/Badge/Badge";
+import { Badge } from "../../Ui/Badge/Badge";
 import { Link } from "react-router-dom";
 
 const HackathonCard = ({

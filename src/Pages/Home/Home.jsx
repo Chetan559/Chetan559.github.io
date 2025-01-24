@@ -1,10 +1,10 @@
-import Hackathon from "@/Components/Hackathon/Hackathon";
-import Hero from "@/Components/Hero/Hero";
-import Navbar from "@/Components/Navbar/Navbar";
-import Project from "@/Components/Project/Project";
-import Review from "@/Components/Review/Review";
+import Hackathon from "../../Components/Hackathon/Hackathon";
+import Hero from "../../Components/Hero/Hero";
+import Navbar from "../../Components/Navbar/Navbar";
+import Project from "../../Components/Project/Project";
+import Review from "../../Components/Review/Review";
 import "./Home.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ArrowDown from "../../assets/arrow-down.svg";
 import ThinkCodeDeploy from "../../Components/ThinkCodeDeploy/ThinkCodeDeploy";
 import Footer from "../../Components/Footer/Footer";
