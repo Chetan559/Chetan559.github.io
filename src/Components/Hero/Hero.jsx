@@ -36,8 +36,7 @@ function Hero() {
   }, []);
 
   const downloadPdf = () => {
-    const resumePath = "../../assets/Resume_ChetanSharma_DataScience.pdf";
-
+    const resumePath = "/Resume_ChetanSharma_DataScience.pdf";
     const link = document.createElement("a");
     link.href = resumePath;
     link.download = "Resume_ChetanSharma_DataScience.pdf"; // Specify the filename for download
@@ -45,7 +44,7 @@ function Hero() {
   };
 
   const downloadVcard = () => {
-    const vcardPath = "../../assets/vcard.vcf";
+    const vcardPath = "/vcard.vcf";
 
     const link = document.createElement("a");
     link.href = vcardPath;
