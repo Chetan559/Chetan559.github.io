@@ -150,7 +150,15 @@ const Footer = () => {
         {/* Column 4 */}
         <div className="flex flex-col space-y-4">
           <button className="btn primary">🎉</button>
-          <button data-feedback-fish="true">Got any feedback?</button>
+          <button data-feedback-fish="true">
+            <Link
+              to={
+                "https://docs.google.com/forms/d/e/1FAIpQLScjIlZpBf_03OCwa8VVmzDnmGJZ7v7qJyNHHnmq1GPsW1E6uQ/viewform?usp=dialog"
+              }
+            >
+              Got any feedback?
+            </Link>
+          </button>
           <div className="flex items-center gap-1 mt-2">
             <img
               alt="IN flag"
