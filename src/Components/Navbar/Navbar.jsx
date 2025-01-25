@@ -13,7 +13,7 @@ const Navbar = () => {
             to="/"
             className="text-lg font-semibold text-gray-800 dark:text-white"
           >
-            Logo
+            Chetan Sharma
           </Link>
 
           {/* Mobile Menu Toggle */}
@@ -23,7 +23,7 @@ const Navbar = () => {
             aria-label="Toggle Navigation"
           >
             {open ? (
-              <span className="text-2xl font-bold dark:text-zinc-50"> × </span> // Close icon
+              <span className="text-2xl font-bold dark:text-zinc-50"> × </span>
             ) : (
               <>
                 <span className="block h-[2px] w-6 bg-gray-800 dark:bg-white mb-1"></span>

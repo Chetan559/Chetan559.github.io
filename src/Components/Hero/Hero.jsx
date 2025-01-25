@@ -2,49 +2,21 @@ import React, { useEffect, useState } from "react";
 import profile from "../../assets/Photo.png";
 import profi from "../../assets/indian-dance-dancing.gif";
 import "./Hero.css";
-
-const techStacks = [
-  {
-    name: "React",
-    color: "#61DBFB",
-    svgPath:
-      "M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346...",
-    // Add more SVG path data as needed
-  },
-  {
-    name: "TypeScript",
-    color: "#007acc",
-    svgPath: "M1.125...",
-    // Add more SVG path data as needed
-  },
-  {
-    name: "JavaScript",
-    color: "#F7DF1E",
-    svgPath: "M0...",
-    // Add more SVG path data as needed
-  },
-  {
-    name: "NextJS",
-    color: "#000000",
-    svgPath: "M11.5725...",
-    // Add more SVG path data as needed
-  },
-  {
-    name: "Tailwindcss",
-    color: "#20c8e9",
-    svgPath: "M12...",
-    // Add more SVG path data as needed
-  },
-  {
-    name: "Sanity",
-    color: "#ea4a36",
-    svgPath: "M7...",
-    // Add more SVG path data as needed
-  },
-];
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const [techStacks, setTechStacks] = useState([]);
+
+  useEffect(() => {
+    // Fetch the JSON data from GitHub
+    fetch("https://chetansharma.co/365Days/JsonData/techStack.json")
+      .then((response) => response.json())
+      .then((data) => setTechStacks(data))
+      .catch((error) => console.error("Error fetching tech stack:", error));
+  }, []);
+
   const [joke, setJoke] = useState("Loading joke...");
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Fetch a joke from the Joke API
@@ -62,6 +34,24 @@ function Hero() {
         setJoke("Something went wrong. Please try again.");
       });
   }, []);
+
+  const downloadPdf = () => {
+    const resumePath = "../../../public/Resume_ChetanSharma_DataScience.pdf";
+
+    const link = document.createElement("a");
+    link.href = resumePath;
+    link.download = "Resume_ChetanSharma_DataScience.pdf"; // Specify the filename for download
+    link.click();
+  };
+
+  const downloadVcard = () => {
+    const vcardPath = "../../../public/vcard.vcf";
+
+    const link = document.createElement("a");
+    link.href = vcardPath;
+    link.download = "ChetanSharma.vcf"; // Specify the filename for download
+    link.click();
+  };
 
   return (
     <div className="container m-auto px-4 pt-12 pb-12 sm:pt-20 bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-white flex flex-col sm:flex-row gap-6 text-center sm:text-left">
@@ -134,10 +124,16 @@ function Hero() {
 
         {/* Buttons Section */}
         <div className="flex gap-4 mt-10">
-          <button className="flex-grow py-3 px-6 text-sm font-bold text-white bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800">
+          <button
+            onClick={downloadPdf}
+            className="flex-grow py-3 px-6 text-sm font-bold text-white bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800"
+          >
             Resume
           </button>
-          <button className="flex-grow py-3 px-6 text-sm font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-pink-300 dark:focus:ring-pink-800">
+          <button
+            onClick={downloadVcard}
+            className="flex-grow py-3 px-6 text-sm font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-pink-300 dark:focus:ring-pink-800"
+          >
             Contact
           </button>
         </div>

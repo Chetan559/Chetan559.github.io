@@ -1,49 +1,6 @@
-import React from "react";
-import { cn } from "../../lib/utils"; // Adjust this path as necessary
-import { Marquee } from "../magicui/marquee"; // Adjust this path as necessary
-
-const reviews = [
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
-  },
-  {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
-  },
-  {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
-  },
-  {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
-  },
-  {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
-  },
-  {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
-  },
-];
-
-// Divide the reviews into two rows
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+import React, { useEffect, useState } from "react";
+import { cn } from "../../lib/utils";
+import { Marquee } from "../magicui/marquee";
 
 const ReviewCard = ({ img, name, username, body }) => {
   return (
@@ -75,6 +32,33 @@ const ReviewCard = ({ img, name, username, body }) => {
 };
 
 function Review() {
+  const [reviews, setReviews] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("https://chetansharma.co/365Days/JsonData/reviews.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setReviews(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching reviews:", error);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <div>Loading reviews...</div>;
+  }
+
+  if (!reviews.length) {
+    return <div>No reviews available.</div>;
+  }
+
+  const firstRow = reviews.slice(0, reviews.length / 2);
+  const secondRow = reviews.slice(reviews.length / 2);
+
   return (
     <div className="relative flex h-[500px] w-full flex-col items-start justify-center overflow-hidden  bg-gray-50 dark:bg-gray-800 ">
       <h3 className="font-bold text-2xl md:text-4xl  tracking-tight text-black dark:text-white transform transition-transform duration-300 hover:scale-105">

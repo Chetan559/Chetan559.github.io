@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HackathonCard from "../../Ui/hackathon-Card/HackathonCard";
-import hackathons from "../../Data/HackathonData"; // Import hackathon data
 
 function Hackathon() {
+  const [hackathons, sethackathons] = useState([]);
+
+  useEffect(() => {
+    // Fetch the JSON data from GitHub
+    fetch("https://chetansharma.co/365Days/JsonData/hackathon.json")
+      .then((response) => response.json())
+      .then((data) => sethackathons(data))
+      .catch((error) => console.error("Error fetching tech stack:", error));
+  }, []);
+
   return (
     <div className="container    bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-white flex flex-col sm:flex-row gap-6 text-center sm:text-left">
       <div className="container m-auto">
