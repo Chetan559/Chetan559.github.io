@@ -36,7 +36,7 @@ function Hero() {
   }, []);
 
   const downloadPdf = () => {
-    const resumePath = "../../../public/Resume_ChetanSharma_DataScience.pdf";
+    const resumePath = "../../assets/Resume_ChetanSharma_DataScience.pdf";
 
     const link = document.createElement("a");
     link.href = resumePath;
@@ -45,7 +45,7 @@ function Hero() {
   };
 
   const downloadVcard = () => {
-    const vcardPath = "../../../public/vcard.vcf";
+    const vcardPath = "../../assets/vcard.vcf";
 
     const link = document.createElement("a");
     link.href = vcardPath;
