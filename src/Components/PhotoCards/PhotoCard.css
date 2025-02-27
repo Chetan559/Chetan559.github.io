@@ -1,0 +1,39 @@
+.container1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container1:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.container1 .glass::before {
+  /* Removed text, keeping the same structure if needed */
+  content: "";
+}
+
+.container1 .glass img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

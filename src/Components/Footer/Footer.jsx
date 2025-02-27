@@ -49,7 +49,7 @@ const Footer = () => {
           </Link>
           <Link
             className="text-gray-400 hover:text-gray-500 transition"
-            to="/404"
+            to="/about"
           >
             About
           </Link>
