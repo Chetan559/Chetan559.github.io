@@ -31,14 +31,14 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="flex flex-col justify-center items-start max-w-[45rem] mx-auto w-full mb-8 bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-white">
+    <footer className="flex flex-col justify-center items-center sm:items-start max-w-[45rem] mx-auto w-full  bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-white">
       {/* Top Section */}
 
       {/* Divider */}
       <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
 
       {/* Footer Links */}
-      <div className="w-full max-w-[45rem] grid grid-cols-1 sm:grid-cols-4 gap-4 pb-16">
+      <div className="w-full max-w-[45rem] grid grid-cols-1 sm:grid-cols-4 gap-4 pb-16 text-center sm:text-left">
         {/* Column 1 */}
         <div className="flex flex-col space-y-4">
           <Link
@@ -97,7 +97,7 @@ const Footer = () => {
           </Link>
           <Link
             className="text-gray-400 hover:text-gray-500 transition"
-            to="/404"
+            to="/utilities"
           >
             Utilities
           </Link>
@@ -159,7 +159,7 @@ const Footer = () => {
               Got any feedback?
             </Link>
           </button>
-          <div className="flex items-center gap-1 mt-2">
+          <div className="flex items-center gap-1 mt-2 text-center sm:text-left">
             <img
               alt="IN flag"
               loading="lazy"
@@ -170,7 +170,7 @@ const Footer = () => {
               src="https://flagcdn.com/h240/in.png"
               style={{ color: "transparent" }}
             />
-            <span className="text-xs text-gray-500 dark:text-gray-400">
+            <span className="text-xs text-gray-500 dark:text-gray-400 ">
               Last visit from IN
             </span>
           </div>
@@ -183,7 +183,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <p className="w-full text-center text-gray-400 hover:text-gray-500 transition">
+      <p className="w-full text-center   text-gray-400 hover:text-gray-500 transition">
         © 2022 Chetan Sharma.
       </p>
     </footer>

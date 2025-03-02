@@ -39,7 +39,7 @@ const Navbar = () => {
               <ListItem NavLink="/">Home</ListItem>
               <ListItem NavLink="/about">About</ListItem>
               <ListItem NavLink="/contact">Contact</ListItem>
-              <ListItem NavLink="/utilites">Utilites</ListItem>
+              <ListItem NavLink="/utilities">Utilites</ListItem>
               {/* <DropdownMenu /> */}
             </ul>
           </nav>
@@ -59,7 +59,7 @@ const Navbar = () => {
             <ListItem NavLink="/contact" onClick={() => setOpen(false)}>
               Contact
             </ListItem>
-            <ListItem NavLink="/utilites" onClick={() => setOpen(false)}>
+            <ListItem NavLink="/utilities" onClick={() => setOpen(false)}>
               Utilites
             </ListItem>
             {/* <DropdownMenu closeMenu={() => setOpen(false)} /> */}
@@ -86,41 +86,3 @@ const ListItem = ({ children, NavLink, onClick }) => {
     </li>
   );
 };
-
-// // Dropdown Menu Component
-// const DropdownMenu = ({ closeMenu }) => {
-//   const [dropdownOpen, setDropdownOpen] = useState(false);
-
-//   return (
-//     <li className="relative">
-//       <button
-//         onClick={() => setDropdownOpen(!dropdownOpen)}
-//         className="flex items-center text-gray-800 dark:text-gray-200 hover:text-purple-600 dark:hover:text-purple-400 transition"
-//       >
-//         More <span className="ml-1">▼</span>
-//       </button>
-//       {dropdownOpen && (
-//         <ul className="absolute mt-2 w-40 bg-white dark:bg-gray-700 shadow-lg rounded-md">
-//           <li>
-//             <Link
-//               to="/settings"
-//               onClick={closeMenu}
-//               className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600"
-//             >
-//               Settings
-//             </Link>
-//           </li>
-//           <li>
-//             <Link
-//               to="/help"
-//               onClick={closeMenu}
-//               className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600"
-//             >
-//               Help
-//             </Link>
-//           </li>
-//         </ul>
-//       )}
-//     </li>
-//   );
-// };
