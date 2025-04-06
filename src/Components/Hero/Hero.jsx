@@ -41,6 +41,8 @@ function Hero() {
     link.href = resumePath;
     link.download = "Resume_ChetanSharma_DataScience.pdf"; // Specify the filename for download
     link.click();
+
+    navigate("/resume");
   };
 
   const downloadVcard = () => {
