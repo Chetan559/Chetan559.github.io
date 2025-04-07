@@ -3,6 +3,7 @@ import profile from "../../assets/Photo.png";
 import profi from "../../assets/indian-dance-dancing.gif";
 import "./Hero.css";
 import { useNavigate } from "react-router-dom";
+import TechIcons from "./TechIcon/TechIcon";
 
 function Hero() {
   const [techStacks, setTechStacks] = useState([]);
@@ -79,26 +80,7 @@ function Hero() {
         <div className="mb-4 mt-6">
           <div>My favorite tech stacks &nbsp;</div>
           <div className="mt-2">
-            {techStacks.map((tech, index) => (
-              <div
-                key={index}
-                className="inline-flex items-center space-x-2 mr-2 transform transition-transform duration-300 hover:scale-110"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill={tech.color}
-                  strokeWidth="0"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d={tech.svgPath}></path>
-                </svg>
-                <p>{tech.name}</p>
-              </div>
-            ))}
+            <TechIcons />
           </div>
         </div>
 
