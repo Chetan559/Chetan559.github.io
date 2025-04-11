@@ -55,7 +55,7 @@ function UtilitesHero() {
       <ThirdIconGrid />
       <br />
       <p className="text-sm">
-        Last Uppdate on <b>Apr 07, 2025</b>
+        Last Uppdate on <b>Apr 11, 2025</b>
       </p>
     </div>
   );

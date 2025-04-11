@@ -64,7 +64,7 @@ function Hero() {
         <h2 className="text-gray-700 dark:text-gray-200 mb-2">
           <span className="relative inline-block group overflow-hidden">
             <span className="bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent dark:from-blue-400 dark:via-cyan-400 dark:to-green-500 after:bg-gradient-to-r block transform transition-transform duration-500 group-hover:translate-y-full">
-              Web developer{" "}
+              Full Stack Data Engineer{" "}
             </span>
             <span className="bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent dark:from-blue-400 dark:via-cyan-400 dark:to-green-500 after:bg-gradient-to-r absolute inset-0 block transform translate-y-full transition-transform duration-500 group-hover:translate-y-0">
               And a Student
@@ -73,7 +73,12 @@ function Hero() {
         </h2>
 
         <p className="text-gray-600 dark:text-gray-400 mb-3 transform transition-transform duration-300 hover:scale-105 w-full sm:w-auto">
-          I'm a third-year student at VGEC who loves coding and data science.
+          As a third-year student at VGEC in Ahmedabad, I am deeply passionate
+          about coding and data engineering. I am currently honing my skills in
+          Python, SQL, and distributed data processing frameworks like Apache
+          Spark. My goal is to leverage these skills to design and optimize data
+          pipelines, ensuring efficient data flow and processing to support
+          innovative projects in the field of data engineering.
           {/* Change this text as needed */}
         </p>
 
