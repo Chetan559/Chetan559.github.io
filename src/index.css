@@ -4,6 +4,7 @@
 
 body {
   cursor: url("/cursor_hovers.cur"), auto;
+  font-family: "Karla", sans-serif;
 }
 
 button:hover,
