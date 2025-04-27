@@ -20,7 +20,7 @@ function Project() {
           <div class="flex flex-row justify-center basis-full md:basis-1/5 gap-x-4">
             <a
               class="bg-gray-200 rounded-md dark:border-gray-600 text-gray-600 dark:text-gray-300 dark:bg-gray-600 p-[0.35rem]"
-              href="404"
+              href="https://prismatic-tiramisu-7f32f9.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="homepage"
@@ -42,7 +42,7 @@ function Project() {
               class="bg-gray-200 rounded-md dark:border-gray-600 text-gray-600 dark:text-gray-300 dark:bg-gray-600 p-[0.35rem]"
               target="_blank"
               rel="noopener noreferrer"
-              href="404"
+              href="https://github.com/Chetan559/medical-ally"
               aria-label="github"
             >
               <svg
@@ -77,7 +77,7 @@ function Project() {
           <div class="flex flex-row justify-center basis-full md:basis-1/5 gap-x-4">
             <a
               class="bg-gray-200 rounded-md dark:border-gray-600 text-gray-600 dark:text-gray-300 dark:bg-gray-600 p-[0.35rem]"
-              href="404"
+              href="https://chetansharma.co/DeepFake-Detector/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="homepage"
@@ -99,7 +99,7 @@ function Project() {
               class="bg-gray-200 rounded-md dark:border-gray-600 text-gray-600 dark:text-gray-300 dark:bg-gray-600 p-[0.35rem]"
               target="_blank"
               rel="noopener noreferrer"
-              href="404"
+              href="https://github.com/Chetan559/Deepfake-Detection"
               aria-label="github"
             >
               <svg
@@ -134,7 +134,7 @@ function Project() {
           <div class="flex flex-row justify-center basis-full md:basis-1/5 gap-x-4">
             <a
               class="bg-gray-200 rounded-md dark:border-gray-600 text-gray-600 dark:text-gray-300 dark:bg-gray-600 p-[0.35rem]"
-              href="404"
+              href="https://chetansharma.co/SSIP_HACKATHON_2023/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="homepage"
@@ -156,7 +156,7 @@ function Project() {
               class="bg-gray-200 rounded-md dark:border-gray-600 text-gray-600 dark:text-gray-300 dark:bg-gray-600 p-[0.35rem]"
               target="_blank"
               rel="noopener noreferrer"
-              href="404"
+              href="https://github.com/Chetan559/SSIP_HACKATHON_2023"
               aria-label="github"
             >
               <svg
