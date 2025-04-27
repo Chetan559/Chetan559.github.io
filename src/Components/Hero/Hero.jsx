@@ -37,7 +37,7 @@ function Hero() {
   }, []);
 
   const downloadPdf = () => {
-    const resumePath = "/Chetan_Sharma_Resume.pdf";
+    const resumePath = "/resume (2).pdf";
     const link = document.createElement("a");
     link.href = resumePath;
     link.download = "Resume_ChetanSharma_DataScience.pdf"; // Specify the filename for download
