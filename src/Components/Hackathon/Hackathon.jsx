@@ -6,7 +6,7 @@ function Hackathon() {
 
   useEffect(() => {
     // Fetch the JSON data from GitHub
-    fetch("https://chetansharma.co/365Days/JsonData/hackathon.json")
+    fetch("https://chetansharma.live/365Days/JsonData/hackathon.json")
       .then((response) => response.json())
       .then((data) => sethackathons(data))
       .catch((error) => console.error("Error fetching tech stack:", error));

@@ -36,7 +36,7 @@ function Review() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://chetansharma.co/365Days/JsonData/reviews.json")
+    fetch("https://chetansharma.live/365Days/JsonData/reviews.json")
       .then((response) => response.json())
       .then((data) => {
         setReviews(data);
