@@ -133,6 +133,23 @@ export const blogs: Blog[] = [
       },
     ],
   },
+  {
+    slug: "shipping-my-first-fine-tune",
+    title: "Shipping My First Fine-Tune",
+    excerpt: "What broke, what worked, and the eval harness that saved the launch.",
+    cover: "/images/blog-finetune-cover.jpg",
+    date: "2026-07-07",
+    readTime: "6 min read",
+    tags: ["AI/ML", "LLMs"],
+    accent: "amber",
+    blocks: [
+      { type: "paragraph", text: "Intro paragraph..." },
+      { type: "heading", text: "The eval harness" },
+      { type: "image", src: "/images/blog-finetune-evals.jpg", alt: "Eval dashboard", caption: "Recall@k over time." },
+      { type: "video", youtubeId: "abc123XYZ", caption: "Two-minute demo." },
+      { type: "quote", text: "Optimize the loop, not the shot." },
+    ],
+  },
 ];
 
 export function getBlog(slug: string) {
