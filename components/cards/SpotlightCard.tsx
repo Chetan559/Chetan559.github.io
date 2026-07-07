@@ -73,7 +73,7 @@ export function SpotlightCard({
           />
         </>
       )}
-      <div className={cn("relative p-8", innerClassName)}>{children}</div>
+      <div className={cn("relative", innerClassName ?? "p-8")}>{children}</div>
     </div>
   );
 }

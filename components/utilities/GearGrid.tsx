@@ -14,7 +14,7 @@ export function GearGrid() {
             <SpotlightCard
               glow="amber"
               className="h-full"
-              innerClassName="flex h-full flex-col"
+              innerClassName="flex h-full flex-col p-8"
             >
               <div className="flex h-40 items-center justify-center rounded bg-line/40 p-4 dark:bg-line-dark/40">
                 <Image

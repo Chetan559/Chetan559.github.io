@@ -29,6 +29,7 @@ export const site = {
     { label: "Experience", href: "/#experience" },
     { label: "Projects", href: "/#projects" },
     { label: "Resume", href: "/#resume" },
+    { label: "Blog", href: "/blog" },
     { label: "Gallery", href: "/gallery" },
     { label: "Utilities", href: "/utilities" },
     { label: "Contact", href: "/contact" },

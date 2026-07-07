@@ -15,7 +15,7 @@ export function ResumeSection() {
               <SpotlightCard
                 glow={resume.accent}
                 className="h-full"
-                innerClassName="flex h-full flex-col"
+                innerClassName="flex h-full flex-col p-8"
               >
                 <h3 className="font-display text-h3 font-bold uppercase tracking-tight">
                   {resume.label}

@@ -44,7 +44,7 @@ export function ProjectCard({ project }: { project: Project }) {
     <TiltCard
       glow={project.accent === "amber" ? "amber" : "blue"}
       className="h-full"
-      innerClassName="flex h-full flex-col"
+      innerClassName="flex h-full flex-col p-8"
     >
       <div className="flex items-start justify-between gap-4">
         <ProjectMark project={project} />
