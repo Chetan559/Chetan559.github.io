@@ -37,10 +37,17 @@ export function Footer() {
           >
             Contact
           </Link>
+          <Link
+            href="/guestbook"
+            data-cursor="hover"
+            className="text-sm text-muted transition-colors hover:text-fg dark:text-muted-dark dark:hover:text-fg-dark"
+          >
+            Sign the guestbook
+          </Link>
         </div>
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6 text-sm text-muted dark:border-line-dark dark:text-muted-dark">
           <p>© 2026 Chetan Sharma</p>
-          <a href="#" data-cursor="hover" className="hover:text-fg dark:hover:text-fg-dark">
+          <a href="#top" data-cursor="hover" className="hover:text-fg dark:hover:text-fg-dark">
             Back to top ↑
           </a>
         </div>

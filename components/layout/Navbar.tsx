@@ -38,7 +38,7 @@ export function Navbar() {
           Chetan Sharma
         </Link>
 
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="hidden items-center gap-6 lg:flex xl:gap-8">
           {site.nav.map((item) => (
             <Link
               key={item.label}

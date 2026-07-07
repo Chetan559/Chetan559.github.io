@@ -41,7 +41,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${oswald.variable} ${inter.variable}`}
     >
-      <body className="font-sans">
+      <body id="top" className="font-sans">
         <ThemeProvider>
           <CustomCursor />
           <Navbar />
