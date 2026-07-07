@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  @apply bg-bg text-fg antialiased dark:bg-bg-dark dark:text-fg-dark;
+}
+
+::selection {
+  background: #2557a7;
+  color: #ffffff;
+}
+
+/* Custom cursor hides the native one, except where precision text editing matters */
+body.cursor-none-enabled *:not(input):not(textarea):not(select) {
+  cursor: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

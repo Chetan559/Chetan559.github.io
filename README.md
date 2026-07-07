@@ -1,27 +1,35 @@
-# About Me
+# Chetan Sharma — Portfolio
 
-I am Chetan Sharma , a student at Viswakarma Government Engineering College pursuing a degree in Computer Engineering. My passion for computer programming and information technology has been a constant driving force in my life.
+Personal portfolio of Chetan Sharma: final-year Computer Engineering student at VGEC (Class of 2026), AI/ML Engineer Intern at Bacancy Services, and Tech Lead. Built with a Dayos-inspired design system — bold condensed typography, blue/amber accents extracted from the profile photo, light/dark themes, and 21st.dev-style interactive cards.
 
-## Passion and Interests
+## Stack
 
-I have been actively involved in computer programming since my early school days, which has allowed me to work on diverse projects, including robotics and programming languages.
+- **Next.js 15** (App Router) + React 19 + TypeScript
+- **Tailwind CSS 3.4** — `darkMode: "selector"`, design tokens in `tailwind.config.ts`
+- **Framer Motion** — scroll reveals, 3D tilt cards, spotlight borders, custom cursor
+- **next-themes** — flash-free light/dark toggle
+- **EmailJS** — contact form (keys via `NEXT_PUBLIC_EMAILJS_*` env vars)
 
-## Future Goals
+## Structure
 
-My future plans include implementing newer technologies like cloud computing and managed IT services. I'm also considering pursuing degree programs in Information Systems Management or Computer Science to further my education.
+- `app/` — routes: `/` (single-page scroll: Hero → About → Experience → Projects → Resume), `/contact`, `/gallery`, `/utilities`
+- `components/` — UI, cards (`SpotlightCard`, `TiltCard`), motion primitives (`Reveal`, `CustomCursor`)
+- `data/` — all copy and content live here; edit content without touching components
 
-## Personality and Soft Skills
+## Develop
 
-I'm known for being a quick learner, having strong customer service skills, and thriving under pressure. My outgoing personality and love for teamwork make me a great collaborator.
+```bash
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # production build (all routes static)
+```
 
-## Desire to Learn
+## Deploy
 
-I am always open to learning new things and getting involved in projects that allow me to apply my knowledge and experience.
+Deployed on Vercel. Set these env vars in the Vercel dashboard:
 
-## Contact
-
-You can reach me at cschetan559@gmail.com .
-
-## Portfolio Website
-
-Explore my work on my portfolio website: <a href="https://chetan559.github.io">HERE</a>
+```
+NEXT_PUBLIC_EMAILJS_SERVICE_ID
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+```
